@@ -95,6 +95,7 @@ body{
 
 }
 .formulaire-recherche button{
+
     height: 3rem;
     font-weight: bold;
     color:white;
@@ -105,8 +106,67 @@ body{
     font-size: 0.9rem;
 
 }
+/* filtres */
+
+.filtres{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-flow: wrap;
+    padding: 50px;
+
+    
+}
+.filtres h2{
+    font-size: 50px;
+    padding: 3rem;
+}
+.bouton-filtre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 8px 8px 8px 8px;
+    border-radius: 1.5rem;
+    background-color: white;
+    border:2px solid #f2f2f2;
+}
+.bouton-filtre i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #deedff;
+    height: 50px;
+    width: 50px;
+    color: #0065fc;
+
+}
+.bouton-filtre span{
+
+}
+
+/* filtres */
+
 /*section recherche*/
 
 
 /*contenu-du-bas*/
+.contenu-du-bas{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+   
+}
+.footer-link{
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap
+
+}
+
+
 /*contenu-du-bas*/
