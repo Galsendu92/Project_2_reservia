@@ -113,60 +113,109 @@ body{
     flex-direction: row;
     align-items: center;
     flex-flow: wrap;
-    padding: 50px;
+    padding-bottom: 16px;
 
     
 }
 .filtres h2{
-    font-size: 50px;
-    padding: 3rem;
+    font-size: 20px;
+    padding-right: 3rem;
 }
 .bouton-filtre{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 8px 8px 8px 8px;
+    align-items: center;
+    padding-right: 16px;
     border-radius: 1.5rem;
     background-color: white;
     border:2px solid #f2f2f2;
+    margin-right: 16px;
+    
+
 }
 .bouton-filtre i{
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #deedff;
     height: 50px;
     width: 50px;
+    background-color: #deebff;
     color: #0065fc;
+    margin: -2px;
 
 }
 .bouton-filtre span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16px;
+    margin: 0 1rem;
+    font-weight: bold;
+
+
 
 }
 
-/* filtres */
+/*filtres */
+
+/*info* */
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    
+}
+.info i{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:white;
+    height: 28px;
+    width: 29px;
+    border:2px solid #f2f2f2;
+    color: #0065fc;
+    
+}
+.info p{
+
+   margin-left: 1rem;
+}
+
+/*info */
+/*main*/
+
+.tout-les-hotels{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+/*hebergements marseille*/
+.cartes-hebergement{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+
+}
+
+
+
+
+
+
+/*main*/
 
 /*section recherche*/
 
 
-/*contenu-du-bas*/
-.contenu-du-bas{
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-   
-}
-.footer-link{
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap
+/*footer*/
 
-}
-
-
-/*contenu-du-bas*/
+/*footer*/
