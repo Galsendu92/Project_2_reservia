@@ -189,17 +189,22 @@ body{
 /*info */
 /*main*/
 
+
 .tout-les-hotels{
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    
 }
 /*hebergements marseille*/
-.cartes-hebergement{
+.hebergements{
+
     background-color: #f2f2f2;
+    border-radius: 1.5rem;
+}
+
+.cartes-hebergement{
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -222,7 +227,6 @@ body{
 
     width: 250px;
     height: 100px;
-    background-size: 100% 100%;
     border-radius: 20px 20px 0 0;
 
 }
@@ -230,6 +234,64 @@ body{
 .cartes-hebergement i.fas.fa-star{
     color: #0065fc;
 }
+/*les plus populaires*/
+.populaires{
+
+    background-color: #f2f2f2;
+    border-radius: 1.5rem;
+    
+
+}
+
+.populaires-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+
+    
+}
+.populaires-header h2{
+    font-size: 20px;
+
+}
+.populaires-header i{
+
+    font-size: 10px;
+
+}
+
+.carte-populaires{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+
+
+}
+
+.carte-populaires a{
+
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 10px #a1a1a1;
+    padding: 10px 10px 10px 10px;
+
+}
+.carte-populaires a img{
+
+    height: 10rem;
+    min-width: 35%;
+    max-width: 35%;
+    object-fit: cover;
+    border-radius: 1.5rem 0 0 1.5rem;
+
+}
+
+/* les plus populaires*/
 
 
 
