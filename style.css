@@ -201,6 +201,11 @@ body{
 
     background-color: #f2f2f2;
     border-radius: 1.5rem;
+    flex-basis: 65%;
+}
+.hebergements h2{
+    font-size: 20px;
+    padding: 3rem 2rem 2rem 3rem;
 }
 
 .cartes-hebergement{
@@ -209,6 +214,8 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 30px;
+    width: 90%;
+    margin: 0 auto;
     
    
 }
@@ -217,28 +224,54 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: start;
+    min-height: 100%;
     border-radius: 24px;
     border: 6px solid transparent;
-    box-shadow: 0px 0px 3px 0px #0000002e;
+    box-shadow: 0px 0px 3px 0px #a1a1a1;
+    
 }
 .cartes-hebergement img{
 
-    width: 250px;
     height: 100px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
+
+}
+.hebergement-sous-contenu{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 90px;
+    padding: 10px 0 0 15px;
 
 }
 
 .cartes-hebergement i.fas.fa-star{
-    color: #0065fc;
+    color: 
+
+}
+.fa-star{
+    color:#b1b1b1;
+
+}
+.fa-star--activate{
+    color:#0065fc
+}
+.affiche-plus{
+
+    border: none;
+    background: none;
+    font-weight: bold;
+    padding: 4rem 2rem 4rem 3.5rem;
+    font-size: 20px;
 }
 /*les plus populaires*/
 .populaires{
 
     background-color: #f2f2f2;
     border-radius: 1.5rem;
+    flex-basis: 32%;
     
 
 }
@@ -247,7 +280,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px 10px 10px;
+    padding: 31px 38px 24px 26px;
 
     
 }
@@ -257,7 +290,7 @@ body{
 }
 .populaires-header i{
 
-    font-size: 10px;
+    font-size: 20px;
 
 }
 
@@ -267,7 +300,9 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 30px;
-
+    width: 80%;
+    margin: auto;
+    
 
 }
 
@@ -278,7 +313,7 @@ body{
     background-color: white;
     border-radius: 1.5rem;
     box-shadow: 0px 0px 10px #a1a1a1;
-    padding: 10px 10px 10px 10px;
+    padding: 6px 6px 6px 6px;
 
 }
 .carte-populaires a img{
@@ -288,8 +323,45 @@ body{
     max-width: 35%;
     object-fit: cover;
     border-radius: 1.5rem 0 0 1.5rem;
+    
+
 
 }
+.carte-populaire-contenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0 10px 20px;
+}
+.activites{
+
+    
+
+
+}
+.cartes-activites{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
+    grid-gap: 30px;
+
+
+}
+.carte-activite-item{
+
+    background-color: white;
+}
+.carte-activite-item img{
+
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+
 
 /* les plus populaires*/
 
@@ -306,5 +378,19 @@ body{
 
 
 /*footer*/
-
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background: blue;
+    margin-top: 10px;
+    padding-right: 10px;
+    height: 20px;
+}
+.footer-item h3{
+    font-size: 10px;
+    padding-top: 10px;
+}
+.footer-item ul{
+    padding-top: 10px;
+}
 /*footer*/
