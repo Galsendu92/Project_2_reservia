@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservia</title>
+
+    <script src="https://kit.fontawesome.com/3689467a52.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+
+    <title>Reservia</title>
 </head>
 
 <body>
@@ -27,33 +29,36 @@
                     <li><a href="#" class="login">S'inscrire</a></li>
                 </ul>
             </nav>
+
             <!-- section recherche -->
             <section class="recherche">
-                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
+
                 <form action="#" class="formulaire-recherche">
                     <i class="fas fa-map-marker-alt"></i>
                     <input type="text" placeholder="Marseille, France">
-                    <button type="button" class="bouton-recherche">Rechercher</button>
+                    <button type="button" class="search-button">Rechercher</button>
                 </form>
-                <div class="filtres">
+
+                <div class="filters">
                     <h2>Filtres</h2>
                     <button type="button" class="bouton-filtre">
-                        <i class="fas fa-money-bill-wave"></i>
-                        <span>&Eacute;conomique</span>
-                    </button>
+                      <i class="fas fa-money-bill-wave"></i>
+                      <span>&Eacute;conomique</span>
+                  </button>
                     <button type="button" class="bouton-filtre">
-                        <i class="fas fa-child"></i>
-                        <span>Familial</span>
-                    </button>
+                      <i class="fas fa-child"></i>
+                      <span>Familial</span>
+                  </button>
                     <button type="button" class="bouton-filtre">
-                        <i class="fas fa-heart"></i>
-                        <span>Romantique</span>
-                    </button>
+                      <i class="fas fa-heart"></i>
+                      <span>Romantique</span>
+                  </button>
                     <button type="button" class="bouton-filtre">
-                        <i class="fas fa-dog"></i>
-                        <span>Animaux autorisés</span>
-                    </button>
+                      <i class="fas fa-dog"></i>
+                      <span>Animaux autorisés</span>
+                  </button>
                 </div>
                 <div class="info">
                     <i class="fas fa-info"></i>
@@ -61,7 +66,8 @@
                 </div>
             </section>
         </header>
-        <!-- Contient les cartes des hotels-->
+
+        <!--MAIN-->
         <main class="main">
 
 
@@ -273,40 +279,92 @@
             </div>
 
         </main>
+
     </div>
-    <!-- Contient le bas de page -->
+
+    <!--partie Activities-->
+    <div class="activities">
+        <div class="title-activities">
+            <h2>Activités à Marseille</h2>
+        </div>
+        <div class="marseille-activities">
+
+            <a class="vp">
+                <div class="vieux-port">
+                    <img src="images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                    <h4>Vieux Port</h4>
+                </div>
+            </a>
+
+            <div class="pomegues-frioul">
+                <a class="po">
+                    <div class="pomegues">
+                        <img src="images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                        <h4>Fort de Pomègue</h4>
+                    </div>
+                </a>
+
+                <a class="fri">
+                    <div class="frioul">
+                        <img src="images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                        <h4>île du Frioul</h4>
+                    </div>
+                </a>
+            </div>
+
+            <a class="cal">
+                <div class="calanques">
+                    <img src="images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                    <h4>Parc National des Calanques</h4>
+                </div>
+            </a>
+
+
+            <div class="notredame-longchamp">
+                <a class="nd">
+                    <div class="notredame">
+                        <img src="images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                        <h4>Notre-Dame-de-la-Garde</h4>
+                    </div>
+                </a>
+
+                <a class="lo">
+                    <div class="longchamp">
+                        <img src="images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                        <h4>Parc longchamp</h4>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--FOOTER-->
     <footer>
         <div class="footer-item">
-            <div class="bloc-footer">
-                <h3>A propos</h3>
-                <ul>
-                    <li><a href="#" class="footer-link">Fontionnement du site</a></li>
-                    <li><a href="#" class="footer-link">Conditions générales de vente</a></li>
-                    <li><a href="#" class="footer-link">Données et confidentialité</a></li>
-                </ul>
-            </div>
+            <h3>A propos</h3>
+            <ul>
+                <li><a href="#" class="footer-link">Fonctionnement du site</a></li>
+                <li><a href="#" class="footer-link">Conditions générales de vente</a></li>
+                <li><a href="#" class="footer-link">Données et confidentialité</a></li>
+            </ul>
         </div>
 
         <div class="footer-item">
-            <div class="bloc-footer">
-                <h3>Nos hébergements</h3>
-                <ul>
-                    <li><a href="#" class="footer-link">Charte qualité</a></li>
-                    <li><a href="#" class="footer-link">Soumettre vote hôtel</a></li>
-                </ul>
-            </div>
+            <h3>Nos hébergements</h3>
+            <ul>
+                <li><a href="#" class="footer-link">Charte qualité</a></li>
+                <li><a href="#" class="footer-link">Soumettre votre hôtel</a></li>
+            </ul>
         </div>
 
         <div class="footer-item">
-            <div class="bloc-footer">
-                <h3>Assistance</h3>
-                <ul>
-                    <li><a href="#" class="footer-link">Centre d'aide</a></li>
-                    <li><a href="#" class="footer-link">Nous contacter</a></li>
-                </ul>
-            </div>
+            <h3>Assistance</h3>
+            <ul>
+                <li><a href="#" class="footer-link">Centre d'aide</a></li>
+                <li><a href="#" class="footer-link">Nous contacter</a></li>
+            </ul>
         </div>
-
     </footer>
 </body>
 
