@@ -5,7 +5,7 @@ a {
     color: black;
 }
 
-::placeholder {
+ ::placeholder {
     color: black;
     font-size: 1.2rem;
 }
@@ -493,30 +493,515 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     background: #f2f2f2;
-    margin-top: 4rem;
-    padding-right: 16rem;
-    height: 15rem;
+    margin-top: 6rem;
+    padding-right: 12rem;
+    height: 18.8rem;
 }
 
 .footer-item h3 {
-    font-size: 19px;
-    padding-top: 3rem;
+    font-size: 1.3rem;
+    padding-top: 4rem;
 }
 
 .footer-item li {
-    padding-top: 10px;
+    padding-top: 1.6rem;
 }
 
 
 /* version mobile*/
 
-@media screen and (max-width: 560px) {}
+@media screen and (max-width: 500px) {
+    .filtres {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "filtre-title ." "economique familial" "romantique ." "animeaux animeaux";
+        row-gap: 0.15rem;
+    }
+    .filtre-title {
+        grid-area: filter-title;
+    }
+    .economique {
+        grid-area: economic;
+    }
+    .familial {
+        grid-area: familial;
+    }
+    .romantique {
+        grid-area: romantic;
+    }
+    .animals {
+        grid-area: animals;
+    }
+    .filtres h2 {
+        margin-right: 0;
+    }
+    .filtres .filter-link {
+        padding: 0 2rem 0 0;
+        border-radius: 3rem;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .filtres .familial {
+        max-width: 12.8rem;
+    }
+    .filtres .animeaux {
+        width: 19.7rem;
+    }
+    .filtre-link i {
+        min-width: 4.3rem;
+        min-height: 4.3rem;
+        font-size: 1.6rem;
+        border-radius: 50%;
+        color: var(--blue);
+        background: var(--blue-light);
+    }
+    .filtres button span {
+        min-width: 4.3rem;
+        min-height: 4.3rem;
+        font-size: 1.4rem;
+    }
+}
 
 
-/* version ipad*/
-
-@media screen and (min-width: 561px) and (max-width: 1126px) {
-    body {
-        background-color: red;
+}
+@media screen and (max-width: 1000px) {
+    .search-form {
+        padding-bottom: 0;
+    }
+    
+    .filters {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "filter-title . " "economic familial" "romantic animals";
+        row-gap: 0.15rem;
+    }
+    
+    .filter-title {
+        grid-area: filter-title;
+    }
+    
+    .economique {
+        grid-area: economic;
+    }
+    
+    .familial {
+        grid-area: familial;
+    }
+    
+    .romantique {
+        grid-area: romantic;
+    }
+    
+    .animeaux {
+        grid-area: animals;
+    }
+    
+    .filtres .filter-link {
+        margin-bottom: 2.2rem;
+        justify-self: start;
+    }
+    
+    .footer {
+        justify-content: space-around;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .contenu {
+        margin: 0;
+    }
+    
+    .naigation {
+        position: relative;
+        display: block;
+        padding-bottom: 4rem;
+    }
+    
+    .logo img {
+        padding-left: 1.5rem;
+    }
+    
+    .navigation ul {
+        margin-top: 2.5rem;
+        justify-content: space-around;
+    }
+    
+    .navigation li:last-child {
+        position: absolute;
+        top: 7rem;
+        right: 0;
+    }
+    
+    .nav-link:nth-child(1),
+    .nav-link:nth-child(2) {
+        border-top: none;
+        border-bottom: 2px solid var(--gray-light);
+    }
+    
+    .nav-link:hover {
+        border-top: none;
+        border-bottom: 2px solid var(--blue);
+    }
+    
+    .nav-link {
+        padding: 1rem 5rem;
+    }
+    
+    .login {
+        margin: unset;
+    }
+    /* section recherche */
+    
+    .recherche {
+        padding: 0 2rem;
+    }
+    
+    .recherche h1 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    
+    .recherche p {
+        font-size: 1.45rem;
+    }
+    
+    .formulaire-recherche {
+        margin-bottom: 1.5rem;
+        padding-bottom: unset;
+    }
+    
+    .formulaire-recherche i:last-child {
+        margin-right: 2rem;
+        border-radius: 1.5rem;
+        color: #fff;
+        background: var(--blue);
+    }
+    
+    .formulaire-recherche input {
+        max-width: 21rem;
+    }
+    
+    .bouton-recherche {
+        display: none;
+    }
+    
+    .search-icon {
+        display: inline-block;
+    }
+    
+    .info .i {
+        align-self: flex-start;
+    }
+    
+    .info p {
+        font-size: 1.4rem;
+    }
+    /* MAIN */
+    
+    .tout-les-hotels {
+        flex-direction: column;
+    }
+    /* hebergements */
+    
+    .hebergements {
+        background: var(--white);
+    }
+    
+    .hebergements h2 {
+        padding: 3rem 0rem 2rem 2rem;
+    }
+    
+    .cartes-hebergement {
+        grid-template-columns: 1fr;
+    }
+    
+    .accommodation-card-item {
+        width: auto;
+        padding: 0.5rem;
+    }
+    
+    .cartes-hebergement a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    
+    .cartes-hebergement img {
+        width: 100%;
+        height: 13rem;
+        padding: 0;
+    }
+    
+    .hebergement-sous-contenu {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        padding: 1rem 0 1rem 1rem;
+    }
+    
+    .hebergement-sous-contenu .card-title {
+        font-size: 1.6rem;
+        padding-bottom: 1rem;
+    }
+    
+    .affiche-plus {
+        padding: 2rem;
+    }
+    /* Popularity */
+    
+    .populaires {
+        order: -1;
+        border-radius: 0;
+    }
+    
+    .populaire-header {
+        padding: 5rem 2rem 2rem 2rem;
+    }
+    
+    .carte-populaires {
+        width: 95%;
+        padding: 0 4%;
+        margin-bottom: 5rem;
+    }
+    /* Activities */
+    
+    .activities {
+        padding: 0 4%;
+    }
+    
+    .activities h2 {
+        margin-top: 0;
+    }
+    
+    .marseille-activities {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    
+    .activities a {
+        height: 22.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .activities-card-item {
+        height: 23.5rem;
+    }
+    
+    .activities a:nth-child(1) img,
+    .activities a:nth-child(4) img {
+        height: 17.6rem;
+    }
+    /* FOOTER */
+    
+    .footer {
+        flex-direction: column;
+        margin-top: 3rem;
+        padding: 0 4% 12% 4%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .filters {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "filtre-title ." "economique familial" "romantique ." "animeaux animeaux";
+        row-gap: 0.15rem;
+    }
+    
+    .filtre-title {
+        grid-area: filter-title;
+    }
+    
+    .economique {
+        grid-area: economic;
+    }
+    
+    .familial {
+        grid-area: familial;
+    }
+    
+    .romantique {
+        grid-area: romantic;
+    }
+    
+    .animeaux {
+        grid-area: animals;
+    }
+    
+    .filtres h2 {
+        margin-right: 0;
+    }
+    
+    .filtres .filter-link {
+        padding: 0 2rem 0 0;
+        border-radius: 3rem;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    
+    .filters .familial {
+        max-width: 12.8rem;
+    }
+    
+    .filtres .animeaux {
+        width: 19.7rem;
+    }
+    
+    .filtre-link i {
+        min-width: 4.3rem;
+        min-height: 4.3rem;
+        font-size: 1.6rem;
+        border-radius: 50%;
+        color: var(--blue);
+        background: var(--blue-light);
+    }
+    
+    .filtres button span {
+        min-width: 4.3rem;
+        min-height: 4.3rem;
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .formulaire-recherche {
+        padding-bottom: 0;
+    }
+    
+    .filtres {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "filter-title . " "economic familial" "romantic animals";
+        row-gap: 0.15rem;
+    }
+    
+    .filtre-title {
+        grid-area: filter-title;
+    }
+    
+    .economique {
+        grid-area: economic;
+    }
+    
+    .familial {
+        grid-area: familial;
+    }
+    
+    .romantique {
+        grid-area: romantic;
+    }
+    
+    .animeaux {
+        grid-area: animals;
+    }
+    
+    .filtres .filter-link {
+        margin-bottom: 2.2rem;
+        justify-self: start;
+    }
+    
+    .footer {
+        justify-content: space-around;
+        padding-right: 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    /* MAIN */
+    
+    .tout-les-hotels {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        row-gap: 3rem;
+    }
+    
+    .hebergements {
+        grid-row: 2 / 3;
+    }
+    
+    .populaires {
+        grid-row: 1 / 2;
+    }
+    
+    .carte-populaires {
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 5rem;
+    }
+    
+    .popularity-card-item {
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+    
+    .carte-populaires img {
+        width: 100%;
+        min-width: 100%;
+        max-width: 0;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+    
+    .carte-populaire-contenu {
+        align-content: space-around;
+        padding: 0 0 0 2rem;
+    }
+    
+    .carte-populaire-contenu-header h3 {
+        padding-bottom: 0;
+    }
+    
+    .marseille-activities {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .activities a:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .activities a:nth-child(2) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .activities a:nth-child(3) {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    .activities a:nth-child(4) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .activities a:nth-child(5) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .activities a:nth-child(6) {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    
+    .marseille-activities {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    
+    .marseille-activities img,
+    .marseille-activities a {
+        height: 22rem;
+    }
+    
+    .marseille-activities h3 {
+        padding: 20px;
+        flex: 1;
     }
 }
