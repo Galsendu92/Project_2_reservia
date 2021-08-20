@@ -204,29 +204,6 @@ nav ul {
 }
 
 
-/*footer*/
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #f2f2f2;
-    margin-top: 6rem;
-    height: 15rem;
-}
-
-.footer-item h3 {
-    font-size: 15px;
-    padding-top: 3rem;
-}
-
-.footer-item li {
-    padding-top: 20px;
-    font-size: 15px;
-    list-style: none;
-}
-
-
 /*tourisme a marseille*/
 
 .tous-les-hotels {
@@ -523,6 +500,29 @@ footer {
 .title-activities h2 {
     padding-bottom: 17px;
     font-size: 21px;
+}
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    margin-top: 6rem;
+    height: 15rem;
+}
+
+.footer-item h3 {
+    font-size: 15px;
+    padding-top: 3rem;
+}
+
+.footer-item li {
+    padding-top: 20px;
+    font-size: 15px;
+    list-style: none;
 }
 
 
